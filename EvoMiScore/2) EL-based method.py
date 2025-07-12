@@ -379,7 +379,13 @@ def optimize_features_and_svm(X_train, y_train, X_test=None, y_test=None,
 
 
     '''
-    Orthogonal crossover was published in 2004 by Shinn-ying Ho in the paper "Intelligent evolutionary algorithms for large parameter optimization problems"
+    Reference: Shinn-ying Ho et al. (2004). "Intelligent evolutionary algorithms for 
+    large parameter optimization problems." IEEE Transactions on Evolutionary Computation.
+
+    The Orthogonal Array (OA) method was published in 2004 by Shinn-ying Ho and provides
+    a more systematic approach to crossover operations, particularly effective for large
+    parameter optimization problems like feature selection with high-dimensional data.
+
     Algorithm Generate_OA(OA, N):
     {
         n := 2⌈log2(N+1)⌉;
